@@ -9,6 +9,34 @@
 
 // 23432 -> да
 
+Console.Write("Введите пятизначное число: ");
+int num = int.Parse(Console.ReadLine());
+if ((num/10000 == num%10) && ((num/1000)%10 == num%100/10)) Console.WriteLine("Число палендром");
+else Console.WriteLine("Число не палендром");
+Console.Write("Проверка равенства первой цифры с пятой: ");
+Console.WriteLine(num/10000 == num%10);
+Console.Write("Проверка равенства второй цифры с четверной: ");
+Console.Write((num/1000)%10 == num%100/10);
+
+
+// Привет, можешь посмотреть пожалуйста почему не работает, и выдаёт ошибку вылета массива., хотел рассмотреть общий случай
+// ____________________________________________________________________________________________
+
+// Console.Write("Ввелите число: ");
+// string num = Console.ReadLine();
+// int size = num.Length;
+// int myTrue = 0;
+// for (int i = 0; i <= size/2; i++)
+//      {
+//           if (num[i] == num[size]){
+//               bool check = true; 
+//           }
+//           else Console.Write("Число не малендром");{
+//                break;
+//           }
+//      }
+// Console.Write("Число палендром");
+//___________________________________________________________________________________________________________________
 // Задача 21
 
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -39,9 +67,9 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-for (int i = 0; i < num; i++ ){
-    double sqr = Math.Pow(i, 3);
-    Console.Write(sqr+" ");
-}
+// Console.WriteLine("Введите число: ");
+// int num = int.Parse(Console.ReadLine());
+// for (int i = 0; i < num; i++ ){
+//     double sqr = Math.Pow(i, 3);
+//     Console.Write(sqr+" ");
+// }
